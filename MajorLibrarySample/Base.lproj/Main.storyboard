@@ -109,6 +109,14 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oKB-Ay-EoW">
+                                <rect key="frame" x="112" y="575" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="plY-KN-idN" kind="show" id="ihD-yp-top"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="HX9-Wp-ZV7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -121,7 +129,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fCy-OO-ouE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-259.4202898550725" y="-575.22321428571422"/>
+            <point key="canvasLocation" x="875" y="98"/>
+        </scene>
+        <!--Third View Controller-->
+        <scene sceneID="RIf-9y-nfl">
+            <objects>
+                <viewController id="plY-KN-idN" customClass="ThirdViewController" customModule="MajorLibrarySample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oI0-pN-aoG">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="T8Q-19-N0b">
+                                <rect key="frame" x="87" y="218" width="240" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7UH-Bf-WVa">
+                                <rect key="frame" x="184" y="496" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="touchImageDownloadButton:" destination="plY-KN-idN" eventType="touchUpInside" id="Hmr-4b-Eku"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O8r-ou-88x"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="ZVf-U1-h5r"/>
+                    <connections>
+                        <outlet property="imageDownloadButton" destination="7UH-Bf-WVa" id="OC3-aQ-yJj"/>
+                        <outlet property="kingfisherImage" destination="T8Q-19-N0b" id="EUD-Sp-XUK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0iX-bZ-Aom" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1738" y="98"/>
         </scene>
     </scenes>
     <designables>

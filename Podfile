@@ -10,5 +10,5 @@ target 'MajorLibrarySample' do
   pod 'RxCocoa', '6.1.0'  
   pod 'Alamofire', '~> 5.2'
   pod 'IBAnimatable'
-
+  pod 'Kingfisher', '~> 6.0'
 end
