@@ -2,6 +2,7 @@
 - RxSwift
 - Alamofire
 - IBAnimatable
+- Kingfisher
 
 # Project Setting
 ``` init Project
